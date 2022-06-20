@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register new Student</title>
+  </head>
+  <body>
+    <main>
+      <div class="success-msg hidden">✅ Saved success</div>
+      <div class="error-msg hidden">🚫 Error trying to save</div>
+      <header class="rgt-header">Register New Student</header>
+      <section class="options">
+        <input class="std-opt opt-id" type="text" placeholder="Id" />
+        <input class="std-opt opt-name" type="text" placeholder="Name" />
+        <input
+          class="std-opt opt-last-name"
+          type="text"
+          placeholder="Last Name"
+        />
+        <input class="std-opt opt-birth" type="date" placeholder="Birthday" />
+        <select class="std-opt opt-course" name="courses" id="courses">
+          <option value="1">Basic</option>
+          <option value="2">Intermediate</option>
+          <option value="3">Advanced</option>
+        </select>
+        <button class="std-opt btn">Save</button>
+      </section>
+      <section class="students"></section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
